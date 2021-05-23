@@ -14,7 +14,7 @@ const List: FC<Props> = (props) => {
   const filteredLogos = useFilterLogos(props.search, data);
 
   return (
-    <Box padding={4}>
+    <Box overflow="auto">
       {status === "fetching" && <Loading />}
       <Box mb={4}>{filteredLogos.length} results</Box>
       {hasData && (

@@ -17,7 +17,7 @@ const SearchInput: FC<Props> = ({ onDebouncedChange }) => {
   }, [search, onDebouncedChange]);
 
   return (
-    <InputGroup flex="2 1">
+    <InputGroup>
       <InputLeftElement
         pointerEvents="none"
         color="gray.300"
