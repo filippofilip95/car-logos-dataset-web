@@ -1,5 +1,5 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
-import React, { FC, useState } from "react";
+import { Flex, Heading } from "@chakra-ui/react";
+import React, { FC } from "react";
 import { ColorModeSwitcher } from "src/components/header/ColorModeSwitcher";
 import SearchInput from "src/components/header/SearchInput";
 
@@ -14,7 +14,7 @@ const Header: FC<Props> = (props) => {
         Car Logos Dataset
       </Heading>
       <SearchInput onDebouncedChange={props.onSearchChanged} />
-      <ColorModeSwitcher justifySelf="flex-end" />
+      <ColorModeSwitcher />
     </Flex>
   );
 };

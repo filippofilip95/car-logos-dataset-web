@@ -10,7 +10,6 @@ import {
   ModalOverlay,
   Modal,
   Box,
-  Flex,
 } from "@chakra-ui/react";
 import Preview from "src/components/list/logo/Preview";
 import { ManufacturerLogo } from "src/types/Logos";

@@ -1,9 +1,8 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
-import React, { FC, useMemo } from "react";
+import React, { FC } from "react";
 import { useFilterLogos, useLogos } from "src/components/List.utils";
 import Loading from "src/components/list/Loading";
 import Logo from "src/components/list/Logo";
-import { isFirstStringIncludedInSecondString } from "src/utils/string";
 
 type Props = {
   search: string;

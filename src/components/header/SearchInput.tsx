@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react";
+import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 import { FaSearch } from "react-icons/all";
 
 type Props = {
@@ -8,16 +8,13 @@ type Props = {
 
 const debounceTime = 200;
 
-const SearchInput: FC<Props> = (props) => {
+const SearchInput: FC<Props> = ({ onDebouncedChange }) => {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    const timer = setTimeout(
-      () => props.onDebouncedChange(search),
-      debounceTime
-    );
+    const timer = setTimeout(() => onDebouncedChange(search), debounceTime);
     return () => void clearTimeout(timer);
-  }, [search]);
+  }, [search, onDebouncedChange]);
 
   return (
     <InputGroup flex="2 1">
