@@ -1,17 +1,23 @@
-import { ChakraProvider, ColorModeScript, theme } from "@chakra-ui/react";
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import * as React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "src/serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import Router from "src/components/Router";
+import { QueryClient, QueryClientProvider } from "react-query";
+import theme from "src/constants/theme";
+
+const queryClient = new QueryClient();
 
 ReactDOM.render(
   <React.StrictMode>
     <ColorModeScript />
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </QueryClientProvider>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")

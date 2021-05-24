@@ -1,9 +1,10 @@
 import React, { FC } from "react";
+import AboutProject from "src/components/AboutProject";
 
 type Props = {};
 
 const About: FC<Props> = (props) => {
-  return <div>About</div>;
+  return <AboutProject />;
 };
 
 export default About;

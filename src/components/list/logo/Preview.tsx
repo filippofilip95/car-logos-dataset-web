@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Preview: FC<Props> = (props) => {
-  const bg = useColorModeValue("gray.50", "gray.600");
+  const bg = useColorModeValue("gray.100", "gray.600");
 
   return (
     <Flex

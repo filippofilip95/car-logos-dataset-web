@@ -1,37 +1,46 @@
 import React, { FC } from "react";
-import { Flex, Stack, Heading, Button, IconButton } from "@chakra-ui/react";
+import {
+  Flex,
+  Stack,
+  Heading,
+  Button,
+  IconButton,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { ColorModeSwitcher } from "src/components/header/ColorModeSwitcher";
 import { FaGithub } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import Routes from "src/constants/routes";
 
 type Props = {};
 
 const Navigation: FC<Props> = (props) => {
   const location = useLocation();
+  const bg = useColorModeValue("white", "gray.700");
 
   return (
-    <Flex p="6" boxShadow="lg" as="nav" height="80px" align="center">
+    <Flex p="6" boxShadow="lg" as="nav" height="80px" align="center" bg={bg}>
       <Heading as="h1" fontSize="2xl" mr="auto" flex="1 1">
         Car Logos Dataset
       </Heading>
       <Stack spacing={2} direction="row" flex="1 1" justify="center">
         <Button
-          isActive={location.pathname === "/search"}
+          isActive={location.pathname === Routes.Logos}
           size="md"
           fontSize="lg"
           color="current"
           as={Link}
-          to="/search"
+          to={Routes.Logos}
         >
-          Search
+          Logos
         </Button>
         <Button
-          isActive={location.pathname === "/about"}
+          isActive={location.pathname === Routes.About}
           size="md"
           fontSize="lg"
           color="current"
           as={Link}
-          to="/about"
+          to={Routes.About}
         >
           About
         </Button>
