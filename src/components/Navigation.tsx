@@ -6,6 +6,7 @@ import {
   Button,
   IconButton,
   useColorModeValue,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "src/components/header/ColorModeSwitcher";
 import { FaGithub } from "react-icons/fa";
@@ -17,13 +18,21 @@ type Props = {};
 const Navigation: FC<Props> = (props) => {
   const location = useLocation();
   const bg = useColorModeValue("white", "gray.700");
+  const [isSmall] = useMediaQuery("(max-width: 768px)");
 
   return (
     <Flex p="6" boxShadow="lg" as="nav" height="80px" align="center" bg={bg}>
-      <Heading as="h1" fontSize="2xl" mr="auto" flex="1 1">
-        Car Logos Dataset
-      </Heading>
-      <Stack spacing={2} direction="row" flex="1 1" justify="center">
+      {!isSmall && (
+        <Heading as="h1" fontSize="2xl" mr="auto" flex="1 1">
+          Car Logos Dataset
+        </Heading>
+      )}
+      <Stack
+        spacing={2}
+        direction="row"
+        flex="1 1"
+        justify={isSmall ? "flex-start" : "center"}
+      >
         <Button
           isActive={location.pathname === Routes.Logos}
           size="md"

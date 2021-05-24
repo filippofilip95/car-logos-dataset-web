@@ -23,6 +23,7 @@ const Preview: FC<Props> = (props) => {
       bg="white"
       justifyContent="center"
       mx="auto"
+      w="100%"
     >
       <Image
         flex="1"
