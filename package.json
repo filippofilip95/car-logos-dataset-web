@@ -27,7 +27,7 @@
     "typescript": "^3.9.5",
     "web-vitals": "^0.2.2"
   },
-  "homepage": "http://filippofilip95.github.io/car-logos-dataset-web",
+  "homepage": "https://filippofilip95.github.io/car-logos-dataset-web",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
