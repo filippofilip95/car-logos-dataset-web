@@ -16,12 +16,8 @@ const AboutProject: FC<Props> = (props) => {
     <Box>
       {isLoading && <Loading />}
       {data && (
-        <Box bg={bg} p={5} borderRadius={5} boxShadow="lg">
-          <ReactMarkdown
-            components={ChakraUIRenderer()}
-            children={data}
-            escapeHtml={false}
-          />
+        <Box bg={bg} p={10} borderRadius={5} boxShadow="lg">
+          <ReactMarkdown components={ChakraUIRenderer()} children={data} />
         </Box>
       )}
     </Box>

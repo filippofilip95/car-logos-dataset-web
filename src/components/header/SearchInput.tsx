@@ -1,5 +1,10 @@
 import React, { FC, useEffect, useState } from "react";
-import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import {
+  Input,
+  InputGroup,
+  InputLeftElement,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { FaSearch } from "react-icons/all";
 
 type Props = {
@@ -10,6 +15,7 @@ const debounceTime = 200;
 
 const SearchInput: FC<Props> = ({ onDebouncedChange }) => {
   const [search, setSearch] = useState("");
+  const bg = useColorModeValue("white", "gray.600");
 
   useEffect(() => {
     const timer = setTimeout(() => onDebouncedChange(search), debounceTime);
@@ -24,6 +30,7 @@ const SearchInput: FC<Props> = ({ onDebouncedChange }) => {
         children={<FaSearch />}
       />
       <Input
+        bg={bg}
         fontSize="xl"
         icon
         placeholder="Search for manufacturer..."
