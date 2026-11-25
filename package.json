@@ -30,7 +30,7 @@
   "homepage": "https://filippofilip95.github.io/car-logos-dataset-web",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettify": "yarn prettier --write .",
