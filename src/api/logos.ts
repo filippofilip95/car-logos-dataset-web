@@ -12,7 +12,7 @@ const LogosApi = {
   readme() {
     return axios
       .get(
-        "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/v2/README.md"
+        "https://raw.githubusercontent.com/filippofilip95/car-logos-dataset/master/README.md"
       )
       .then((r) => r.data);
   },
