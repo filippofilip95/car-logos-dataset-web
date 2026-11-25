@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/car-logos-dataset-web/static/js/main.4588fb14.chunk.js",
-    "main.js.map": "/car-logos-dataset-web/static/js/main.4588fb14.chunk.js.map",
+    "main.js": "/car-logos-dataset-web/static/js/main.64a979cf.chunk.js",
+    "main.js.map": "/car-logos-dataset-web/static/js/main.64a979cf.chunk.js.map",
     "runtime-main.js": "/car-logos-dataset-web/static/js/runtime-main.6baae1ef.js",
     "runtime-main.js.map": "/car-logos-dataset-web/static/js/runtime-main.6baae1ef.js.map",
-    "static/js/2.5674eef5.chunk.js": "/car-logos-dataset-web/static/js/2.5674eef5.chunk.js",
-    "static/js/2.5674eef5.chunk.js.map": "/car-logos-dataset-web/static/js/2.5674eef5.chunk.js.map",
+    "static/js/2.9fda3f57.chunk.js": "/car-logos-dataset-web/static/js/2.9fda3f57.chunk.js",
+    "static/js/2.9fda3f57.chunk.js.map": "/car-logos-dataset-web/static/js/2.9fda3f57.chunk.js.map",
     "index.html": "/car-logos-dataset-web/index.html",
-    "static/js/2.5674eef5.chunk.js.LICENSE.txt": "/car-logos-dataset-web/static/js/2.5674eef5.chunk.js.LICENSE.txt"
+    "static/js/2.9fda3f57.chunk.js.LICENSE.txt": "/car-logos-dataset-web/static/js/2.9fda3f57.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6baae1ef.js",
-    "static/js/2.5674eef5.chunk.js",
-    "static/js/main.4588fb14.chunk.js"
+    "static/js/2.9fda3f57.chunk.js",
+    "static/js/main.64a979cf.chunk.js"
   ]
 }
